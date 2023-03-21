@@ -1,7 +1,7 @@
 package thito.nodejfx;
 
 import javafx.scene.control.*;
-import javafx.util.*;
+import javafx.util.StringConverter;
 
 public class SpinnerValueFactoryKit {
 

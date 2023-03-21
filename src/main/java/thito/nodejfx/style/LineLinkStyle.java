@@ -1,13 +1,14 @@
 package thito.nodejfx.style;
 
-import javafx.scene.*;
 import javafx.scene.Node;
-import javafx.scene.effect.DropShadow;
-import javafx.scene.layout.*;
+import javafx.scene.Parent;
+import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
-import javafx.scene.shape.*;
-import thito.nodejfx.*;
-import thito.nodejfx.style.active.*;
+import javafx.scene.shape.Line;
+import thito.nodejfx.NodeLink;
+import thito.nodejfx.NodeLinkContainer;
+import thito.nodejfx.NodeLinkStyle;
+import thito.nodejfx.style.active.ActiveLinkHelper;
 
 public class LineLinkStyle implements NodeLinkStyle {
 

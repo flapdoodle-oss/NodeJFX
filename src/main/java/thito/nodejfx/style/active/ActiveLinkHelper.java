@@ -2,12 +2,13 @@ package thito.nodejfx.style.active;
 
 import javafx.animation.*;
 import javafx.scene.Node;
-import javafx.scene.paint.*;
-import javafx.scene.shape.*;
-import javafx.util.*;
-import thito.nodejfx.*;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Shape;
+import javafx.util.Duration;
+import thito.nodejfx.NodeLinkContainer;
+import thito.nodejfx.NodeLinkShape;
 
-import java.util.*;
+import java.util.Arrays;
 
 public class ActiveLinkHelper {
     private Shape shape;

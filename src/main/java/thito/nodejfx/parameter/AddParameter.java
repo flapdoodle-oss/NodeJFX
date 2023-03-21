@@ -1,10 +1,9 @@
 package thito.nodejfx.parameter;
 
-import javafx.geometry.*;
-import javafx.scene.control.*;
-import javafx.scene.paint.*;
-import thito.nodejfx.*;
-import thito.nodejfx.internal.*;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import thito.nodejfx.NodeParameter;
+import thito.nodejfx.internal.CrossButton;
 
 public class AddParameter extends NodeParameter {
 

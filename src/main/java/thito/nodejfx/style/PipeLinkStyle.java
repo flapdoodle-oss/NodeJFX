@@ -1,13 +1,16 @@
 package thito.nodejfx.style;
 
-import javafx.scene.*;
 import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.effect.DropShadow;
-import javafx.scene.layout.*;
+import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.*;
-import thito.nodejfx.*;
-import thito.nodejfx.style.active.*;
+import thito.nodejfx.NodeContext;
+import thito.nodejfx.NodeLink;
+import thito.nodejfx.NodeLinkContainer;
+import thito.nodejfx.NodeLinkStyle;
+import thito.nodejfx.style.active.ActiveLinkHelper;
 
 public class PipeLinkStyle implements NodeLinkStyle {
 

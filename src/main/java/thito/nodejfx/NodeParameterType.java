@@ -1,9 +1,7 @@
 package thito.nodejfx;
 
 import javafx.beans.property.ObjectProperty;
-import javafx.beans.property.ReadOnlyObjectProperty;
 import javafx.beans.property.ReadOnlyObjectWrapper;
-import javafx.beans.property.SimpleObjectProperty;
 import javafx.scene.paint.Color;
 
 public interface NodeParameterType {

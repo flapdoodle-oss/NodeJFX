@@ -1,13 +1,15 @@
 package thito.nodejfx.internal;
 
-import javafx.beans.*;
-import javafx.beans.property.*;
-import javafx.collections.*;
+import javafx.beans.WeakListener;
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.SimpleBooleanProperty;
+import javafx.collections.ListChangeListener;
+import javafx.collections.ObservableList;
 
-import java.lang.ref.*;
-import java.util.*;
-import java.util.function.*;
-import java.util.stream.*;
+import java.lang.ref.WeakReference;
+import java.util.List;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class MappedListBinding<F, E> implements ListChangeListener<E>, WeakListener {
     public static <F, E> MappedListBinding<F, E> bind(List<F> list1, ObservableList<? extends E> list2, Function<E, F> mapping) {

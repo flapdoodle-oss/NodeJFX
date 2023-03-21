@@ -1,19 +1,25 @@
 package thito.nodejfx;
 
-import com.sun.glass.ui.*;
-import javafx.application.*;
-import javafx.beans.property.*;
-import javafx.geometry.*;
-import javafx.scene.*;
+import com.sun.glass.ui.GlassRobot;
+import javafx.application.Application;
+import javafx.application.Platform;
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.SimpleBooleanProperty;
+import javafx.beans.property.SimpleObjectProperty;
+import javafx.geometry.Point2D;
 import javafx.scene.Cursor;
-import javafx.scene.input.*;
-import javafx.scene.paint.*;
-import javafx.scene.text.*;
-import javafx.scene.transform.*;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontPosture;
+import javafx.scene.text.FontWeight;
 
-import java.awt.image.*;
-import java.util.*;
-import java.util.function.*;
+import java.awt.image.BufferedImage;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+import java.util.function.Consumer;
 
 public interface NodeContext {
     Color
@@ -33,7 +39,7 @@ public interface NodeContext {
             FONT_NODE = Font.font(null, FontWeight.BLACK, -1);
     int
             HEIGHT_NODE = 50;
-    Robot robot = com.sun.glass.ui.Application.GetApplication().createRobot();
+    GlassRobot robot = com.sun.glass.ui.Application.GetApplication().createRobot();
     BooleanProperty MOUSE_DOWN = new SimpleBooleanProperty();
     FXUtil util = new FXUtil();
 

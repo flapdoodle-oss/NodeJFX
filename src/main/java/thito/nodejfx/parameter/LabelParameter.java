@@ -2,10 +2,7 @@ package thito.nodejfx.parameter;
 
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BackgroundFill;
 import javafx.scene.paint.Color;
-import javafx.scene.text.TextAlignment;
 import thito.nodejfx.NodeParameter;
 
 public class LabelParameter extends NodeParameter {

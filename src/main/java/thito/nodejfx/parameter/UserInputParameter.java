@@ -2,7 +2,7 @@ package thito.nodejfx.parameter;
 
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.ObjectProperty;
-import javafx.scene.*;
+import javafx.scene.Node;
 import javafx.scene.control.*;
 import thito.nodejfx.parameter.converter.TypeCaster;
 

@@ -1,6 +1,6 @@
 package thito.nodejfx;
 
-import javafx.beans.property.*;
+import javafx.beans.property.ObjectProperty;
 import javafx.collections.ObservableSet;
 import javafx.geometry.Bounds;
 import javafx.geometry.Point2D;

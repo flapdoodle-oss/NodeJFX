@@ -1,16 +1,20 @@
 package thito.nodejfx;
 
-import javafx.beans.binding.*;
-import javafx.beans.property.*;
+import javafx.beans.binding.Bindings;
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.SimpleBooleanProperty;
+import javafx.beans.property.SimpleObjectProperty;
 import javafx.collections.*;
-import javafx.geometry.*;
-import javafx.scene.*;
-import javafx.scene.input.*;
-import javafx.scene.layout.*;
-import thito.nodejfx.event.*;
+import javafx.geometry.Point2D;
+import javafx.scene.CacheHint;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Pane;
+import thito.nodejfx.event.NodeLinkEvent;
 
-import java.util.*;
-import java.util.concurrent.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class NodeCanvas extends Pane {
 

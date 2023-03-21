@@ -1,23 +1,17 @@
 package thito.nodejfx;
 
-import javafx.animation.*;
-import javafx.application.*;
-import javafx.beans.*;
-import javafx.beans.property.*;
+import javafx.application.Platform;
+import javafx.beans.InvalidationListener;
+import javafx.beans.Observable;
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.SimpleObjectProperty;
 import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.collections.ObservableSet;
-import javafx.event.EventHandler;
 import javafx.geometry.Bounds;
 import javafx.geometry.Point2D;
 import javafx.scene.Node;
 import javafx.scene.Parent;
-import javafx.scene.control.Tooltip;
-import javafx.scene.effect.*;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.*;
-import javafx.scene.shape.Shape;
-import javafx.util.*;
 
 public class NodeLinked extends NodeLink implements InvalidationListener {
     private NodeParameter source, target;

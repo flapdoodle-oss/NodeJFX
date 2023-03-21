@@ -10,10 +10,10 @@ import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.control.Spinner;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.paint.*;
-import javafx.util.StringConverter;
-import thito.nodejfx.*;
-import thito.nodejfx.internal.*;
+import javafx.scene.paint.Color;
+import thito.nodejfx.NodeParameter;
+import thito.nodejfx.SpinnerValueFactoryKit;
+import thito.nodejfx.internal.SuperBinding;
 import thito.nodejfx.parameter.converter.TypeCaster;
 import thito.nodejfx.parameter.type.JavaParameterType;
 

@@ -3,7 +3,6 @@ package thito.nodejfx.control;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.control.Spinner;
-import javafx.scene.control.SpinnerValueFactory;
 import javafx.scene.layout.BorderPane;
 import javafx.util.StringConverter;
 import thito.nodejfx.NodeViewport;

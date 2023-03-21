@@ -3,8 +3,6 @@ package thito.nodejfx.parameter.converter;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.Property;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public interface TypeCaster<T> {

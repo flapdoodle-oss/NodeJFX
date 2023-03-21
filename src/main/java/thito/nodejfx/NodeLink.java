@@ -1,6 +1,5 @@
 package thito.nodejfx;
 
-import javafx.application.*;
 import javafx.beans.InvalidationListener;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleDoubleProperty;

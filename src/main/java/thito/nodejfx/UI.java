@@ -1,25 +1,24 @@
-package test;
+package thito.nodejfx;
 
-import javafx.application.*;
-import javafx.geometry.*;
-import javafx.scene.*;
-import javafx.scene.image.*;
-import javafx.scene.input.*;
-import javafx.scene.text.*;
-import javafx.stage.*;
-import thito.nodejfx.Node;
-import thito.nodejfx.*;
+import javafx.application.Application;
+import javafx.geometry.Rectangle2D;
+import javafx.scene.Scene;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontPosture;
+import javafx.scene.text.FontWeight;
+import javafx.stage.Screen;
+import javafx.stage.Stage;
 import thito.nodejfx.parameter.*;
-import thito.nodejfx.parameter.type.*;
+import thito.nodejfx.parameter.type.JavaParameterType;
 
-public class UITest extends Application {
+public class UI extends Application {
 
     public static final NodeParameterType[] TYPES = new NodeParameterType[8];
 
     static int total = 0;
     public static void main(String[] args) {
         System.setProperty("prism.forceGPU", "true");
-        UITest.launch(UITest.class, args);
+        UI.launch(UI.class, args);
     }
 
     @Override

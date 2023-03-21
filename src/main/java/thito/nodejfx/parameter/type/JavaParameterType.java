@@ -4,12 +4,9 @@ import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.scene.paint.Color;
 import thito.nodejfx.NodeContext;
-import thito.nodejfx.NodeLinkShape;
 import thito.nodejfx.NodeParameterType;
-import thito.nodejfx.parameter.converter.TypeCaster;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class JavaParameterType<T> implements NodeParameterType {

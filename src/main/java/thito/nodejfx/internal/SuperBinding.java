@@ -1,8 +1,8 @@
 package thito.nodejfx.internal;
 
-import javafx.beans.property.*;
+import javafx.beans.property.Property;
 
-import java.util.concurrent.atomic.*;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class SuperBinding {
     public static void bindBidirectional(Property property, Property other, Class<?> hint) {

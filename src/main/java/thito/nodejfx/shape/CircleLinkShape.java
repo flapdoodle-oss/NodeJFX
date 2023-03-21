@@ -1,7 +1,6 @@
 package thito.nodejfx.shape;
 
 import javafx.scene.Node;
-import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 import javafx.scene.shape.Circle;
 import thito.nodejfx.NodeLinkShape;

@@ -1,7 +1,7 @@
 package thito.nodejfx;
 
 import javafx.beans.Observable;
-import javafx.beans.binding.*;
+import javafx.beans.binding.Bindings;
 import javafx.beans.property.*;
 import javafx.collections.*;
 import javafx.event.Event;
@@ -12,13 +12,12 @@ import javafx.scene.effect.DropShadow;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.paint.*;
-import javafx.scene.text.*;
-import thito.nodejfx.internal.*;
+import javafx.scene.text.Font;
+import javafx.scene.text.TextAlignment;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.stream.*;
 
 public class Node extends BorderPane implements NodeCanvasElement {
 

@@ -1,9 +1,12 @@
 package thito.nodejfx.event;
 
-import javafx.beans.property.*;
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.SimpleBooleanProperty;
 import javafx.event.Event;
 import javafx.event.EventType;
-import thito.nodejfx.*;
+import thito.nodejfx.NodeLinked;
+import thito.nodejfx.NodeLinking;
+import thito.nodejfx.NodeParameter;
 
 public class NodeLinkEvent extends Event {
     public static final EventType<NodeLinkEvent>

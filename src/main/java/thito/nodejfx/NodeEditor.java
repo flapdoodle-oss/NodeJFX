@@ -1,12 +1,16 @@
 package thito.nodejfx;
 
-import javafx.geometry.*;
-import javafx.scene.*;
-import javafx.scene.input.*;
-import javafx.scene.layout.*;
-import javafx.scene.shape.*;
+import javafx.geometry.Point2D;
+import javafx.scene.CacheHint;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseButton;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.Region;
+import javafx.scene.shape.Rectangle;
 
-import java.util.*;
+import java.util.ArrayList;
 
 public class NodeEditor extends AnchorPane {
     public static <T extends Region> T clip(T region) {

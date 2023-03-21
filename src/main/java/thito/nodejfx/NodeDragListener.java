@@ -1,7 +1,7 @@
 package thito.nodejfx;
 
 import javafx.event.Event;
-import javafx.geometry.*;
+import javafx.geometry.Point2D;
 
 public class NodeDragListener {
     private NodeParameter parameter;

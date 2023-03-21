@@ -7,17 +7,23 @@ import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableSet;
-import javafx.event.*;
+import javafx.event.Event;
+import javafx.event.EventHandler;
+import javafx.event.EventType;
 import javafx.geometry.Insets;
 import javafx.geometry.Point2D;
 import javafx.geometry.Pos;
 import javafx.scene.layout.*;
 import thito.nodejfx.event.NodeLinkEvent;
-import thito.nodejfx.internal.*;
+import thito.nodejfx.internal.CrossButton;
+import thito.nodejfx.internal.EventHandlerProperty;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.function.*;
+import java.util.function.Predicate;
 
 public class NodeParameter extends AnchorPane {
 

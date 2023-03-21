@@ -1,24 +1,31 @@
 package thito.nodejfx;
 
-import javafx.animation.*;
-import javafx.beans.*;
-import javafx.beans.property.*;
-import javafx.collections.*;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
+import javafx.beans.InvalidationListener;
+import javafx.beans.property.DoubleProperty;
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.SimpleDoubleProperty;
+import javafx.beans.property.SimpleObjectProperty;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableSet;
 import javafx.css.*;
-import javafx.embed.swing.*;
-import javafx.geometry.*;
+import javafx.embed.swing.SwingFXUtils;
+import javafx.geometry.Bounds;
+import javafx.geometry.Point2D;
+import javafx.scene.CacheHint;
 import javafx.scene.Node;
-import javafx.scene.*;
-import javafx.scene.canvas.*;
-import javafx.scene.image.*;
-import javafx.scene.input.*;
+import javafx.scene.canvas.Canvas;
+import javafx.scene.image.Image;
+import javafx.scene.input.MouseButton;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
-import javafx.scene.paint.*;
-import javafx.scene.shape.*;
-import javafx.scene.transform.*;
-import javafx.util.*;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.ImagePattern;
+import javafx.scene.transform.Scale;
+import javafx.util.Duration;
 
-import java.awt.image.*;
+import java.awt.image.BufferedImage;
 
 public class NodeViewport extends AnchorPane {
 

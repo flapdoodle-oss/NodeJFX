@@ -1,9 +1,13 @@
 package thito.nodejfx;
 
-import org.jnativehook.*;
-import org.jnativehook.mouse.*;
+import org.jnativehook.GlobalScreen;
+import org.jnativehook.NativeHookException;
+import org.jnativehook.mouse.NativeMouseEvent;
+import org.jnativehook.mouse.NativeMouseInputListener;
 
-import java.util.logging.*;
+import java.util.logging.Level;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
 
 public class FXUtil implements NativeMouseInputListener {
     public FXUtil() {
