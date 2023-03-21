@@ -8,14 +8,14 @@ import javafx.scene.text.FontPosture;
 import javafx.scene.text.FontWeight;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
+import javafx.util.converter.IntegerStringConverter;
 import thito.nodejfx.parameter.*;
 import thito.nodejfx.parameter.type.JavaParameterType;
 
+import java.util.Arrays;
+
 public class UI extends Application {
 
-    public static final NodeParameterType[] TYPES = new NodeParameterType[8];
-
-    static int total = 0;
     public static void main(String[] args) {
         System.setProperty("prism.forceGPU", "true");
         UI.launch(UI.class, args);
@@ -32,7 +32,7 @@ public class UI extends Application {
 
         NodeContext.resizeFont(Font.font(null, FontWeight.BLACK, FontPosture.ITALIC, 125), 10);
 
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 3; i++) {
             canvas.getNodes().add(createNode(i % 5 + 1));
         }
 
@@ -93,7 +93,12 @@ public class UI extends Application {
                 castableType(new NumberParameter("Number", Double.class)),
                 castableType(new EnumParameter<>("Enum", Test.class)),
                 castableType(new BooleanParameter("Boolean")),
-                new CharacterParameter("Character")
+                new SpecificParameter("Special","subtext", "tooltip"),
+                new CharacterParameter("Character"),
+                new ObjectParameter("object"),
+                new AddParameter(),
+                new ListParameter<Integer>("List", Integer.class,
+                  Arrays.asList(1, 2), new IntegerStringConverter())
         );
         return node;
     }
